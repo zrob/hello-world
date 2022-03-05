@@ -9,6 +9,8 @@ spec:
     env:
       - name: CGO_ENABLED
         value: "0"
+      - name: newthing
+        value: newstuff
   serviceAccountName: cartographer-example-basic-sc-sa
   source:
     git:
