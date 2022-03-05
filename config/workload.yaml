@@ -1,0 +1,17 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    app.tanzu.vmware.com/workload-type: web
+  name: basic-sc
+spec:
+  build:
+    env:
+      - name: CGO_ENABLED
+        value: "0"
+  serviceAccountName: cartographer-example-basic-sc-sa
+  source:
+    git:
+      ref:
+        branch: tap
+      url: https://github.com/zrob/hello-world
