@@ -5,10 +5,6 @@ metadata:
     app.tanzu.vmware.com/workload-type: web
   name: zach
 spec:
-  build:
-    env:
-      - name: CGO_ENABLED
-        value: "0"
   serviceAccountName: cartographer-example-basic-sc-sa
   source:
     git:
