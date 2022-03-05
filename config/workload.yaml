@@ -3,7 +3,7 @@ kind: Workload
 metadata:
   labels:
     app.tanzu.vmware.com/workload-type: web
-  name: basic-sc
+  name: zach
 spec:
   build:
     env:
