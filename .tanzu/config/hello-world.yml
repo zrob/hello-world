@@ -6,6 +6,9 @@ spec:
   build:
     buildpacks: {}
     path: ../..
+    nonSecretEnv:
+    - name: BP_LOG_LEVEL
+      value: DEBUG  
   ports:
   - name: main
     port: 8080
