@@ -1,7 +1,7 @@
 apiVersion: apps.tanzu.vmware.com/v1
 kind: ContainerApp
 metadata:
-  name: hello-world
+  name: hello-world-other-one
 spec:
   build:
     buildpacks: {}
